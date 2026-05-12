@@ -5,15 +5,15 @@ import { useTilt } from "@/hooks/useTilt";
 import isTewsImg from "@/assets/is-tews.png";
 import atmosenseImg from "@/assets/atmosense.png";
 import smartRestaurantImg from "@/assets/smart-restaurant.png";
-import predictiveMaintenanceImg from "@/assets/predictive-maintenance.jpg";
-import esp32PcbImg from "@/assets/esp32-pcb.jpg";
+import predictiveMaintenanceImg from "@/assets/predictive-maintenance.jpeg";
+import esp32PcbImg from "@/assets/esp32-pcb.jpeg";
 import sewageGasImg from "@/assets/sewage-gas.png";
-import bluelockImg from "@/assets/bluelock.jpg";
+import bluelockImg from "@/assets/bluelock.jpeg";
 import natureMonitorImg from "@/assets/nature-monitor.png";
 import industrialEnergyImg from "@/assets/industrial-energy.png";
 import bridalEcommerceImg from "@/assets/bridal-ecommerce.png";
-import fitnessImg from "@/assets/fitness-studio.jpg";
-import clinicImg from "@/assets/clinic.jpg";
+import fitnessImg from "@/assets/fitness-studio.jpeg";
+import clinicImg from "@/assets/clinic.jpeg";
 
 const projects = [
   {
@@ -33,7 +33,7 @@ const projects = [
     tech: ["Python", "Flask", "OpenCV"],
     status: "Live — Deployed",
     link: "https://pm-25-prediction-and-analysis-project-production-a9d3.up.railway.app/",
-    image: sewageGasImg,
+    image: atmosenseImg,
   },
   {
     title: "Sewage Gas Monitor",
@@ -43,7 +43,7 @@ const projects = [
     tech: ["IoT", "Embedded C", "Firebase"],
     status: "Live — Deployed",
     link: "https://sewage-gas.onrender.com",
-    image: atmosenseImg,
+    image: sewageGasImg,
   },
   {
     title: "Smart Restaurant",
