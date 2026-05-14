@@ -81,8 +81,7 @@ export default function TeamSection() {
             The <span className="text-gradient">Founders</span>
           </h2>
           <p className="font-heading text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Four RHCSA-certified ECE engineers from Francis Xavier Engineering College, Tirunelveli
-            — 2026 batch.
+            Two TCS NQT Digital Cleared and Three RHCSA-certified ECE engineers from Tirunelveli.
           </p>
         </div>
 

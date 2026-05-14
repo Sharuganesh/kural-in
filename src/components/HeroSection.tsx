@@ -81,15 +81,15 @@ export default function HeroSection() {
 
         {/* Company name — responsive sizing prevents overflow */}
         <h1
-          className="font-display font-bold tracking-wider mb-4 animate-hero-fade leading-[1.05] break-words"
+          className="font-display font-bold tracking-wider mb-4 animate-hero-fade leading-[1.05] break-normal"
           style={{
             animationDelay: "0.3s",
             transform: "translateZ(40px)",
-            fontSize: "clamp(2.25rem, 11vw, 6rem)",
+            fontSize: "clamp(1.85rem, 8.5vw, 4.5rem)",
           }}
         >
           <span className="text-gradient block">KURAL</span>
-          <span className="text-foreground block">INNOVATIONS</span>
+          <span className="text-foreground block whitespace-nowrap">INNOVATIONS</span>
         </h1>
 
         <p

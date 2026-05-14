@@ -12,17 +12,21 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Kural Innovations — Small Ideas. Powerful Solutions." },
+      { title: "Kural Innovations | Web Development & Digital Solutions" },
       {
         name: "description",
         content:
-          "Technology innovation studio building real-world solutions across Web, IoT, Embedded Systems & AI/ML. Based in Tamil Nadu, India.",
+          "Kural Innovations is a technology-driven innovation studio based in Tamil Nadu, transforming small ideas into powerful real-world solutions.",
       },
-      { property: "og:title", content: "Kural Innovations — Small Ideas. Powerful Solutions." },
       {
-        property: "og:description",
-        content: "Where ideas meet implementation — Web · IoT · Embedded · AI",
+        name: "keywords",
+        content: "Kural Innovations, web development, Tamil Nadu tech company, digital solutions, startup development",
       },
+      { name: "robots", content: "index, follow" },
+      { property: "og:title", content: "Kural Innovations" },
+      { property: "og:description", content: "Small Ideas. Powerful Solutions." },
+      { property: "og:url", content: "https://www.kural-innovations.in" },
+      { property: "og:type", content: "website" },
     ],
   }),
 });
