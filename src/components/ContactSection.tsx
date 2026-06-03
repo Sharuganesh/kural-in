@@ -103,7 +103,7 @@ export default function ContactSection() {
             Let's Build <span className="text-gradient">Together</span>
           </h2>
           <p className="font-heading text-lg text-muted-foreground max-w-xl mx-auto">
-            Have an idea? A problem that needs solving? Send us a message and we'll get back to you.
+            Have an idea, a problem to solve, or a project in mind? Send a message and we'll get back to you within 24 hours.
           </p>
         </div>
 
@@ -151,7 +151,7 @@ export default function ContactSection() {
 
             <div className="flex items-center gap-2 text-muted-foreground px-4">
               <span className="text-sm">📍</span>
-              <span className="font-mono text-sm">Tamil Nadu, India</span>
+              <span className="font-mono text-sm">Tirunelveli, Tamil Nadu, India</span>
             </div>
           </div>
 

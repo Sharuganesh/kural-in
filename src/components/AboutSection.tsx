@@ -43,13 +43,14 @@ export default function AboutSection() {
             className={`space-y-6 transition-all duration-700 delay-200 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
           >
             <p className="text-muted-foreground leading-relaxed text-lg">
-              Kural Innovations is a technology-driven innovation studio based in Tamil Nadu,
-              focused on transforming simple ideas into powerful, real-world solutions.
+              Kural Innovations is a technology-driven innovation studio based in Tirunelveli,
+              Tamil Nadu, focused on transforming simple ideas into powerful, real-world solutions.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               We are not a typical service provider. We operate as a{" "}
               <span className="text-primary font-semibold">build lab</span> — where ideas are
-              designed, developed, and implemented into practical systems that solve real problems.
+              designed, developed, and implemented into practical systems that solve real problems,
+              from websites to growth marketing.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Inspired by "Kural" — short yet impactful wisdom. The belief that the smallest idea,
@@ -64,22 +65,22 @@ export default function AboutSection() {
               {
                 icon: "🔧",
                 title: "Real-world working solutions",
-                desc: "Not mockups. Not prototypes. Every delivery works in the field.",
+                desc: "Not mockups. Not prototypes. Every delivery works in the field. You get a live, functioning system — not a demo.",
               },
               {
                 icon: "🏗️",
                 title: "Web + IoT + Embedded under one roof",
-                desc: "Rare combination of firmware, hardware, and software expertise.",
+                desc: "From landing pages to connected hardware systems, our team covers the full technical stack in-house.",
               },
               {
                 icon: "🎯",
                 title: "Problem-first approach",
-                desc: 'Every project begins with: "What real problem are we solving?"',
+                desc: "We start every project by asking: what problem are we actually solving? That keeps the work focused and results measurable.",
               },
               {
                 icon: "💡",
-                title: "Innovation-first mindset",
-                desc: "Every solution is custom-engineered from scratch.",
+                title: "Custom-built from scratch",
+                desc: "We don't reuse generic templates. Every solution is engineered for your specific business, location, and audience.",
               },
             ].map((item) => (
               <AboutCard key={item.title} item={item} />

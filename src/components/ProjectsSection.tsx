@@ -2,101 +2,75 @@ import { useRef, useEffect, useState, useCallback } from "react";
 import SectionLabel from "./SectionLabel";
 import { useTilt } from "@/hooks/useTilt";
 
-import isTewsImg from "@/assets/is-tews.png";
-import atmosenseImg from "@/assets/atmosense.png";
+import arokyaImg from "@/assets/arokya.png";
+import yaazhImg from "@/assets/yaazh.png";
+import turfImg from "@/assets/turf.png";
+import fitnessImg from "@/assets/fitness-studio.jpeg";
+import bridalEcommerceImg from "@/assets/bridal-ecommerce.png";
+import natureMonitorImg from "@/assets/nature-monitor.png";
+import industrialEnergyImg from "@/assets/industrial-energy.png";
+import sewageGasImg from "@/assets/sewage-gas.png";
 import smartRestaurantImg from "@/assets/smart-restaurant.png";
 import predictiveMaintenanceImg from "@/assets/predictive-maintenance.jpeg";
 import esp32PcbImg from "@/assets/esp32-pcb.jpeg";
-import sewageGasImg from "@/assets/sewage-gas.png";
-import bluelockImg from "@/assets/bluelock.jpeg";
-import natureMonitorImg from "@/assets/nature-monitor.png";
-import industrialEnergyImg from "@/assets/industrial-energy.png";
-import bridalEcommerceImg from "@/assets/bridal-ecommerce.png";
-import fitnessImg from "@/assets/fitness-studio.jpeg";
-import clinicImg from "@/assets/clinic.jpeg";
+import isTewsImg from "@/assets/is-tews.png";
 
 const projects = [
   {
-    title: "IS-TEWS",
-    subtitle: "India-Specific Tsunami Early Warning System",
-    type: "Research · AI/ML · IoT",
-    desc: "ML system trained on 17,038 real USGS earthquake events to predict tsunami risk with AUC 0.9957.",
-    tech: ["LightGBM", "Python", "Flask", "ESP8266"],
-    status: "Active — Research",
-    image: isTewsImg,
-  },
-  {
-    title: "AtmoSense",
-    subtitle: "PM2.5 Estimation & AQI Visualisation",
-    type: "AI/ML · Web · Deployed",
-    desc: "Offline air quality estimation from satellite imagery with zero API dependencies.",
-    tech: ["Python", "Flask", "OpenCV"],
+    title: "Arokya Plumbing Contractor",
+    subtitle: "Plumbing Contractor Website — Coimbatore",
+    type: "Web · Business · Deployed",
+    desc: "Lead-focused website built for a contractor with 23+ years of experience and over 3,000 completed projects. Highlights 24/7 emergency support and converts visitors into enquiries.",
+    tech: ["React", "Vite", "SEO", "Lead Capture"],
     status: "Live — Deployed",
-    link: "https://pm-25-prediction-and-analysis-project-production-a9d3.up.railway.app/",
-    image: atmosenseImg,
+    link: "https://www.arokyaplumbingcontractor.in/",
+    image: arokyaImg,
   },
   {
-    title: "Sewage Gas Monitor",
-    subtitle: "IoT-Based Gas Detection & Alert System",
-    type: "IoT · Safety · Deployed",
-    desc: "Safety-focused IoT system monitoring toxic gas in confined spaces with real-time alerts.",
-    tech: ["IoT", "Embedded C", "Firebase"],
+    title: "Yaazh Speciality Clinic",
+    subtitle: "Speciality Clinic Website — Coimbatore",
+    type: "Web · Healthcare · Deployed",
+    desc: "Patient-first clinic website with doctor profiles, listed services, facility photos, and a WhatsApp booking button. Built with accessibility and health-sector SEO in mind.",
+    tech: ["React", "Vite", "SEO", "Accessibility"],
     status: "Live — Deployed",
-    link: "https://sewage-gas.onrender.com",
-    image: sewageGasImg,
+    link: "https://www.yaazhspecialityclinic.com/",
+    image: yaazhImg,
   },
   {
-    title: "Smart Restaurant",
-    subtitle: "IoT-Enabled Ordering & Kitchen Alert",
-    type: "IoT · Embedded · Web",
-    desc: "QR ordering from ESP8266 AP. Orders to Firebase in <1s with kitchen alerts via buzzer/LED/LCD.",
-    tech: ["ESP8266", "Arduino", "Firebase"],
-    status: "Built & Functional",
-    image: smartRestaurantImg,
+    title: "Elite 360 Turf Booking",
+    subtitle: "Sports Turf Booking Website — Madurai",
+    type: "Web · Booking · Deployed",
+    desc: "Live slot booking interface with transparent pricing, facility photos, customer reviews, and a clear location section. Built for quick decisions and minimal friction.",
+    tech: ["React", "Vite", "Booking UI", "Responsive"],
+    status: "Live — Deployed",
+    link: "https://elite-360.vercel.app/",
+    image: turfImg,
   },
   {
-    title: "Predictive Maintenance",
-    subtitle: "On-Device Industrial Fault Detection",
-    type: "Embedded · AI · IoT",
-    desc: "FFT-based vibration anomaly detection at the edge. Auto-shuts motor and sends SMS alerts.",
-    tech: ["ESP8266", "MPU6050", "SIM800C"],
-    status: "Built & Functional",
-    image: predictiveMaintenanceImg,
-  },
-  {
-    title: "ESP32 PCB Design",
-    subtitle: "2-Layer Wi-Fi Relay Switch PCB",
-    type: "PCB · Hardware",
-    desc: "Complete 2-layer PCB with buck converter, relay driver, and ESP32. DRC validated and fab-ready.",
-    tech: ["ESP32", "EasyEDA", "Buck Converter"],
-    status: "Fabrication-Ready",
-    image: esp32PcbImg,
+    title: "Fitness Studio",
+    subtitle: "Premium Unisex Gym Website — Kovilpatti",
+    type: "Web · Commercial · Deployed",
+    desc: "Bold, high-energy website for a premium gym. Covers classes, trainer profiles, membership plans, and a free-trial booking flow.",
+    tech: ["React", "FastAPI", "Python"],
+    status: "Live — Deployed",
+    link: "https://immersive-fit-3d.preview.emergentagent.com/",
+    image: fitnessImg,
   },
   {
     title: "AK Bangles",
     subtitle: "Bridal E-Commerce Jewelry Website",
     type: "Web · Commercial · Deployed",
-    desc: "Professional commercial landing site for AK Bangles — traditional and modern bangles collection.",
+    desc: "Commercial landing site for a traditional bangle store — showcasing collections, building brand trust, and directing customers to purchase.",
     tech: ["HTML", "CSS", "JavaScript"],
     status: "Live — Deployed",
     link: "https://vsiva763-git.github.io/cheery-alfajores-407f3e/",
     image: bridalEcommerceImg,
   },
   {
-    title: "BlueLock Exam Portal",
-    subtitle: "Secure Online Examination Platform",
-    type: "Web · Deployed",
-    desc: "Secure, timed online exams with auth, auto-evaluation, and instant results display.",
-    tech: ["HTML", "JavaScript", "Firebase"],
-    status: "Live — Deployed",
-    link: "https://bluelockexamportal.netlify.app/",
-    image: bluelockImg,
-  },
-  {
     title: "Nature Monitor",
     subtitle: "Environmental Sensor Dashboard",
     type: "IoT · Web · Deployed",
-    desc: "Real-time environmental dashboard aggregating live nature/weather sensor readings with trend viz.",
+    desc: "Real-time dashboard aggregating live environmental sensor readings — temperature, humidity, air quality — with trend visualization and alerts.",
     tech: ["Python", "Flask", "IoT"],
     status: "Live — Deployed",
     link: "https://nature-monitor.onrender.com/",
@@ -106,31 +80,57 @@ const projects = [
     title: "Industrial Energy Monitor",
     subtitle: "IoT Real-Time Energy Dashboard",
     type: "IoT · Embedded · Deployed",
-    desc: "Real-time IoT dashboard tracking electrical parameters with cloud push and threshold alerts.",
+    desc: "Cloud-connected IoT dashboard tracking live electrical parameters from factory equipment. Includes threshold alerts and historical trend charts.",
     tech: ["ESP8266", "ThingSpeak", "Firebase"],
     status: "Live — Deployed",
     link: "https://iot-energy-monitor.onrender.com/",
     image: industrialEnergyImg,
   },
   {
-    title: "Fitness Studio",
-    subtitle: "Premium Unisex Gym Website",
-    type: "Web · Commercial · Deployed",
-    desc: "Bold, high-energy site for a premium Kovilpatti gym — facilities, trainers, classes, plans, and free-trial booking.",
-    tech: ["React", "FastAPI", "Python"],
+    title: "Sewage Gas Monitor",
+    subtitle: "IoT-Based Gas Detection & Alert System",
+    type: "IoT · Safety · Deployed",
+    desc: "Safety-critical IoT system that monitors toxic gas levels in confined spaces — sewage pits and underground chambers — with real-time alerts to field teams.",
+    tech: ["IoT", "Embedded C", "Firebase"],
     status: "Live — Deployed",
-    link: "https://immersive-fit-3d.preview.emergentagent.com/",
-    image: fitnessImg,
+    link: "https://sewage-gas.onrender.com",
+    image: sewageGasImg,
   },
   {
-    title: "Clinic Webage",
-    subtitle: "Immersive Healthcare Web Platform",
-    type: "Web · Healthcare · Deployed",
-    desc: "Modern patient-first clinic site with doctor profiles, specialities, appointment booking, and testimonials.",
-    tech: ["React", "FastAPI", "Vercel"],
-    status: "Live — Deployed",
-    link: "https://yaazh-immersive-care.preview.emergentagent.com/",
-    image: clinicImg,
+    title: "Smart Restaurant",
+    subtitle: "IoT-Enabled Ordering & Kitchen Alert",
+    type: "IoT · Embedded · Web",
+    desc: "QR-based ordering system running on an ESP8266 access point. Orders reach the kitchen in under one second via Firebase, with buzzer, LED, and LCD alerts.",
+    tech: ["ESP8266", "Arduino", "Firebase"],
+    status: "Built & Functional",
+    image: smartRestaurantImg,
+  },
+  {
+    title: "Predictive Maintenance",
+    subtitle: "On-Device Industrial Fault Detection",
+    type: "Embedded · AI · IoT",
+    desc: "FFT-based vibration anomaly detection running at the edge. Detects bearing and motor faults in real time, auto-shuts the motor, and sends SMS alerts via SIM800C.",
+    tech: ["ESP8266", "MPU6050", "SIM800C"],
+    status: "Built & Functional",
+    image: predictiveMaintenanceImg,
+  },
+  {
+    title: "ESP32 PCB Design",
+    subtitle: "2-Layer Wi-Fi Relay Switch PCB",
+    type: "PCB · Hardware",
+    desc: "Complete 2-layer PCB with onboard buck converter, relay driver circuit, and ESP32 module. DRC-validated and ready for fabrication.",
+    tech: ["ESP32", "EasyEDA", "Buck Converter"],
+    status: "Fabrication-Ready",
+    image: esp32PcbImg,
+  },
+  {
+    title: "IS-TEWS",
+    subtitle: "India-Specific Tsunami Early Warning System",
+    type: "Research · AI/ML · IoT",
+    desc: "ML system trained on 17,038 real USGS earthquake events to predict tsunami risk along India's coastline. Achieved AUC of 0.9957. Includes ESP8266-based alert hardware and a Flask REST API. Dataset published on Zenodo.",
+    tech: ["LightGBM", "Python", "Flask", "ESP8266"],
+    status: "Active — Research",
+    image: isTewsImg,
   },
 ];
 

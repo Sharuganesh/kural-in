@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import ParticleField from "./ParticleField";
 import logo from "@/assets/logo.png";
 import { useParallax } from "@/hooks/useParallax";
@@ -96,36 +97,32 @@ export default function HeroSection() {
           className="font-heading text-base sm:text-xl md:text-2xl text-muted-foreground mb-3 animate-hero-fade px-2"
           style={{ animationDelay: "0.6s", transform: "translateZ(30px)" }}
         >
-          Small Ideas. <span className="text-primary">Powerful Solutions.</span>
+          Tirunelveli growth studio for <span className="text-primary">web + marketing</span>.
         </p>
 
         <p
           className="font-mono text-xs sm:text-sm md:text-base text-muted-foreground tracking-wide mb-8 sm:mb-10 animate-hero-fade"
           style={{ animationDelay: "0.8s", transform: "translateZ(25px)" }}
         >
-          Web · IoT · Embedded · AI
+          Web · SEO · Ads · Social · Video
         </p>
 
         <div
           className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-hero-fade px-4"
           style={{ animationDelay: "1s", transform: "translateZ(50px)" }}
         >
-          <button
-            onClick={() =>
-              document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })
-            }
+          <Link
+            to="/projects"
             className="px-6 sm:px-8 py-3 rounded-lg font-heading text-sm tracking-wider bg-primary text-primary-foreground glow-cyan hover:scale-105 active:scale-95 transition-transform duration-300"
           >
             VIEW PROJECTS
-          </button>
-          <button
-            onClick={() =>
-              document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })
-            }
+          </Link>
+          <Link
+            to="/contact"
             className="px-6 sm:px-8 py-3 rounded-lg font-heading text-sm tracking-wider border border-primary text-primary hover:bg-primary/5 transition-all duration-300"
           >
             GET IN TOUCH
-          </button>
+          </Link>
         </div>
 
         <div
@@ -133,10 +130,10 @@ export default function HeroSection() {
           style={{ animationDelay: "1.3s", transform: "translateZ(20px)" }}
         >
           {[
-            { value: "12+", label: "Projects Built" },
-            { value: "4", label: "Co-Founders" },
-            { value: "5+", label: "Tech Domains" },
-            { value: "0.9957", label: "Best AUC Score" },
+            { value: "SEO", label: "Local Rankings" },
+            { value: "Ads", label: "Meta + Google" },
+            { value: "Social", label: "Content + Growth" },
+            { value: "Video", label: "Edits + Reels" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="font-display text-xl sm:text-2xl md:text-3xl text-primary">

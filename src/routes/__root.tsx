@@ -1,4 +1,4 @@
-import { Outlet, Link, createRootRoute, HeadContent } from "@tanstack/react-router";
+import { Outlet, Link, createRootRoute, HeadContent, useLocation } from "@tanstack/react-router";
 
 function NotFoundComponent() {
   return (
@@ -28,10 +28,14 @@ export const Route = createRootRoute({
 });
 
 function RootComponent() {
+  const location = useLocation();
+
   return (
     <>
       <HeadContent />
-      <Outlet />
+      <div key={location.pathname} className="page-enter">
+        <Outlet />
+      </div>
     </>
   );
 }
