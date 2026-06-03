@@ -15,10 +15,22 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Web development, SEO, Meta & Google Ads, social media handling, Google Business setup, and video editing services across Tirunelveli and Tamil Nadu.",
+          "Explore Kural Innovations' services: web development, SEO, Google & Meta ads, social media, video editing, IoT systems, and AI/ML solutions across Tamil Nadu.",
       },
       { name: "keywords", content: SEO_KEYWORDS },
       { name: "robots", content: "index, follow" },
+      { name: "author", content: "Kural Innovations" },
+      { property: "og:title", content: "Services - Kural Innovations" },
+      { property: "og:description", content: "Web development, SEO, Ads, Social Media, Video Editing, IoT, and AI/ML" },
+      { property: "og:url", content: "https://www.kural-innovations.in/services" },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://www.kural-innovations.in/logo.png" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Our Services" },
+      { name: "twitter:description", content: "Web, SEO, Ads, Social, Video, IoT & AI/ML" },
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.kural-innovations.in/services" },
     ],
   }),
 });

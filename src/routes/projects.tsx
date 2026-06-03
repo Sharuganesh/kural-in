@@ -11,14 +11,26 @@ export const Route = createFileRoute("/projects")({
   component: ProjectsPage,
   head: () => ({
     meta: [
-      { title: "Projects | Website & Technology Portfolio" },
+      { title: "Projects | Kural Innovations Portfolio" },
       {
         name: "description",
         content:
-          "Explore Kural Innovations projects spanning websites, booking platforms, and smart systems across Tamil Nadu.",
+          "View Kural Innovations' portfolio of 15+ projects including websites, IoT systems, and AI solutions built for businesses across Tirunelveli and Tamil Nadu.",
       },
       { name: "keywords", content: SEO_KEYWORDS },
       { name: "robots", content: "index, follow" },
+      { name: "author", content: "Kural Innovations" },
+      { property: "og:title", content: "Portfolio - Kural Innovations" },
+      { property: "og:description", content: "15+ projects delivering web, IoT, and AI solutions" },
+      { property: "og:url", content: "https://www.kural-innovations.in/projects" },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://www.kural-innovations.in/logo.png" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Our Projects" },
+      { name: "twitter:description", content: "15+ delivered projects" },
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.kural-innovations.in/projects" },
     ],
   }),
 });

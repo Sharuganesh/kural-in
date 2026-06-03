@@ -19,6 +19,18 @@ export const Route = createFileRoute("/about")({
       },
       { name: "keywords", content: SEO_KEYWORDS },
       { name: "robots", content: "index, follow" },
+      { name: "author", content: "Kural Innovations" },
+      { property: "og:title", content: "About Kural Innovations" },
+      { property: "og:description", content: "Learn about our team of ECE engineers building solutions in Tirunelveli" },
+      { property: "og:url", content: "https://www.kural-innovations.in/about" },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://www.kural-innovations.in/logo.png" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "About Kural Innovations" },
+      { name: "twitter:description", content: "Learn about our team of ECE engineers" },
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.kural-innovations.in/about" },
     ],
   }),
 });

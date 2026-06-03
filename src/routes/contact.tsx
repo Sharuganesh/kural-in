@@ -15,10 +15,22 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Start your web, SEO, ads, or social media project with Kural Innovations in Tirunelveli. Reach out for a quick response.",
+          "Get in touch with Kural Innovations. Contact us for web development, SEO, marketing, or IoT projects in Tirunelveli and Tamil Nadu.",
       },
       { name: "keywords", content: SEO_KEYWORDS },
       { name: "robots", content: "index, follow" },
+      { name: "author", content: "Kural Innovations" },
+      { property: "og:title", content: "Contact - Kural Innovations" },
+      { property: "og:description", content: "Let's discuss your project" },
+      { property: "og:url", content: "https://www.kural-innovations.in/contact" },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://www.kural-innovations.in/logo.png" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Get in Touch" },
+      { name: "twitter:description", content: "Contact Kural Innovations" },
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.kural-innovations.in/contact" },
     ],
   }),
 });

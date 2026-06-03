@@ -15,10 +15,22 @@ export const Route = createFileRoute("/team")({
       {
         name: "description",
         content:
-          "Meet the founders of Kural Innovations, the Tirunelveli-based team building web, marketing, and IoT solutions.",
+          "Meet the ECE engineers behind Kural Innovations. Specialized in backend infrastructure, frontend UI/UX, IoT systems, and AI/ML solutions.",
       },
       { name: "keywords", content: SEO_KEYWORDS },
       { name: "robots", content: "index, follow" },
+      { name: "author", content: "Kural Innovations" },
+      { property: "og:title", content: "Team - Kural Innovations" },
+      { property: "og:description", content: "ECE engineers specializing in web, IoT, and AI" },
+      { property: "og:url", content: "https://www.kural-innovations.in/team" },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://www.kural-innovations.in/logo.png" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Meet the Team" },
+      { name: "twitter:description", content: "ECE engineers from Tirunelveli" },
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.kural-innovations.in/team" },
     ],
   }),
 });
