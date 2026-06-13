@@ -31,7 +31,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-3 group" onClick={() => setMobileOpen(false)}>
           <img src={logo} alt="Kural Innovations" className="h-10 w-10 object-contain" />
           <span className="font-display text-lg tracking-wider text-primary hidden sm:block">
-            KURAL
+            KURAL INNOVATIONS
           </span>
         </Link>
 

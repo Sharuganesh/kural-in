@@ -27,8 +27,6 @@ export default function HeroSection() {
         {/* Main Heading */}
         <h1 className="font-display font-bold tracking-wider mb-4 leading-tight" style={{ fontSize: "clamp(2rem, 7vw, 3.5rem)" }}>
           <span className="text-gradient">Web Development & Digital Growth</span>
-          <br />
-          <span className="text-foreground">for Tirunelveli Businesses</span>
         </h1>
 
         {/* Subheading */}
