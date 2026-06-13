@@ -30,7 +30,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group" onClick={() => setMobileOpen(false)}>
           <img src={logo} alt="Kural Innovations" className="h-10 w-10 object-contain" />
-          <span className="font-display text-lg tracking-wider text-primary hidden sm:block">
+          <span className="font-display text-xs sm:text-lg tracking-wider text-primary">
             KURAL INNOVATIONS
           </span>
         </Link>
