@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import ContactDetails from "@/components/ContactDetails";
 import Footer from "@/components/Footer";
@@ -9,35 +10,27 @@ const SEO_KEYWORDS =
 
 export const Route = createFileRoute("/contact")({
   component: ContactPage,
-  head: () => ({
-    meta: [
-      { title: "Contact | Kural Innovations" },
-      {
-        name: "description",
-        content:
-          "Get in touch with Kural Innovations. Contact us for web development, SEO, marketing, or IoT projects in Tirunelveli and Tamil Nadu.",
-      },
-      { name: "keywords", content: SEO_KEYWORDS },
-      { name: "robots", content: "index, follow" },
-      { name: "author", content: "Kural Innovations" },
-      { property: "og:title", content: "Contact - Kural Innovations" },
-      { property: "og:description", content: "Let's discuss your project" },
-      { property: "og:url", content: "https://www.kural-innovations.in/contact" },
-      { property: "og:type", content: "website" },
-      { property: "og:image", content: "https://www.kural-innovations.in/logo.png" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Get in Touch" },
-      { name: "twitter:description", content: "Contact Kural Innovations" },
-    ],
-    link: [
-      { rel: "canonical", href: "https://www.kural-innovations.in/contact" },
-    ],
-  }),
 });
 
 function ContactPage() {
   return (
     <PageTransition>
+      <Helmet>
+        <title>Contact Kural Innovations | Tirunelveli Tech Studio</title>
+        <meta name="description" content="Get in touch with Kural Innovations in Tirunelveli. Contact us for web development, SEO, digital marketing, IoT, and AI/ML projects." />
+        <meta name="keywords" content={SEO_KEYWORDS} />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Kural Innovations" />
+        <link rel="canonical" href="https://www.kural-innovations.in/contact" />
+        <meta property="og:title" content="Contact - Kural Innovations" />
+        <meta property="og:description" content="Contact us for web development, SEO, ads, and IoT projects in Tirunelveli" />
+        <meta property="og:url" content="https://www.kural-innovations.in/contact" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.kural-innovations.in/logo.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Contact Kural Innovations" />
+        <meta name="twitter:description" content="Get in touch with us in Tirunelveli" />
+      </Helmet>
       <div className="min-h-screen bg-background">
         <Navbar />
         <main className="pt-24">

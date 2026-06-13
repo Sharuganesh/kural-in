@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import ProjectsSection from "@/components/ProjectsSection";
 import Footer from "@/components/Footer";
@@ -9,35 +10,27 @@ const SEO_KEYWORDS =
 
 export const Route = createFileRoute("/projects")({
   component: ProjectsPage,
-  head: () => ({
-    meta: [
-      { title: "Projects | Kural Innovations Portfolio" },
-      {
-        name: "description",
-        content:
-          "View Kural Innovations' portfolio of 15+ projects including websites, IoT systems, and AI solutions built for businesses across Tirunelveli and Tamil Nadu.",
-      },
-      { name: "keywords", content: SEO_KEYWORDS },
-      { name: "robots", content: "index, follow" },
-      { name: "author", content: "Kural Innovations" },
-      { property: "og:title", content: "Portfolio - Kural Innovations" },
-      { property: "og:description", content: "15+ projects delivering web, IoT, and AI solutions" },
-      { property: "og:url", content: "https://www.kural-innovations.in/projects" },
-      { property: "og:type", content: "website" },
-      { property: "og:image", content: "https://www.kural-innovations.in/logo.png" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Our Projects" },
-      { name: "twitter:description", content: "15+ delivered projects" },
-    ],
-    link: [
-      { rel: "canonical", href: "https://www.kural-innovations.in/projects" },
-    ],
-  }),
 });
 
 function ProjectsPage() {
   return (
     <PageTransition>
+      <Helmet>
+        <title>Portfolio | Kural Innovations Projects & Case Studies</title>
+        <meta name="description" content="View Kural Innovations' portfolio of 15+ projects including websites, IoT systems, and AI solutions built for businesses across Tirunelveli and Tamil Nadu." />
+        <meta name="keywords" content={SEO_KEYWORDS} />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Kural Innovations" />
+        <link rel="canonical" href="https://www.kural-innovations.in/projects" />
+        <meta property="og:title" content="Portfolio - Kural Innovations" />
+        <meta property="og:description" content="15+ delivered projects in web development, IoT, and AI" />
+        <meta property="og:url" content="https://www.kural-innovations.in/projects" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.kural-innovations.in/logo.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Our Projects" />
+        <meta name="twitter:description" content="15+ delivered projects in web, IoT, and AI" />
+      </Helmet>
       <div className="min-h-screen bg-background">
         <Navbar />
         <main className="pt-24">

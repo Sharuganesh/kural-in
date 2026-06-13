@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import HomeFeatures from "@/components/HomeFeatures";
@@ -10,40 +11,28 @@ const SEO_KEYWORDS =
 
 export const Route = createFileRoute("/")({
   component: Index,
-  head: () => ({
-    meta: [
-      { title: "Kural Innovations | Web Development & Digital Solutions" },
-      {
-        name: "description",
-        content:
-          "Kural Innovations is a Tirunelveli-based web, SEO, ads, and digital growth studio delivering high-impact websites and marketing across Tamil Nadu.",
-      },
-      {
-        name: "keywords",
-        content: SEO_KEYWORDS,
-      },
-      { name: "robots", content: "index, follow" },
-      { name: "author", content: "Kural Innovations" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { property: "og:title", content: "Kural Innovations" },
-      { property: "og:description", content: "Small Ideas. Powerful Solutions. Web, SEO, Ads, Social & Video" },
-      { property: "og:url", content: "https://www.kural-innovations.in/" },
-      { property: "og:type", content: "website" },
-      { property: "og:image", content: "https://www.kural-innovations.in/logo.png" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Kural Innovations" },
-      { name: "twitter:description", content: "Small Ideas. Powerful Solutions." },
-      { name: "twitter:image", content: "https://www.kural-innovations.in/logo.png" },
-    ],
-    link: [
-      { rel: "canonical", href: "https://www.kural-innovations.in/" },
-    ],
-  }),
 });
 
 function Index() {
   return (
     <PageTransition>
+      <Helmet>
+        <title>Kural Innovations | Web Development & Digital Solutions</title>
+        <meta name="description" content="Kural Innovations is a Tirunelveli-based web, SEO, ads, and digital growth studio delivering high-impact websites and marketing across Tamil Nadu." />
+        <meta name="keywords" content={SEO_KEYWORDS} />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Kural Innovations" />
+        <link rel="canonical" href="https://www.kural-innovations.in/" />
+        <meta property="og:title" content="Kural Innovations | Web Development & Digital Solutions" />
+        <meta property="og:description" content="Small Ideas. Powerful Solutions. Web, SEO, Ads, Social & Video" />
+        <meta property="og:url" content="https://www.kural-innovations.in/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.kural-innovations.in/logo.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Kural Innovations" />
+        <meta name="twitter:description" content="Small Ideas. Powerful Solutions." />
+        <meta name="twitter:image" content="https://www.kural-innovations.in/logo.png" />
+      </Helmet>
       <div className="min-h-screen bg-background">
         <Navbar />
         <HeroSection />

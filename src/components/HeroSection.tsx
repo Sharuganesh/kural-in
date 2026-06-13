@@ -75,8 +75,12 @@ export default function HeroSection() {
         >
           <img
             src={logo}
-            alt="Kural Innovations"
+            alt="Kural Innovations - Student-founded tech studio from Tirunelveli offering web development, IoT, and AI/ML solutions"
             className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 mx-auto drop-shadow-[0_8px_30px_rgba(99,102,241,0.4)]"
+            width={144}
+            height={144}
+            loading="eager"
+            fetchPriority="high"
           />
         </div>
 

@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import ServicesSection from "@/components/ServicesSection";
 import Footer from "@/components/Footer";
@@ -9,35 +10,27 @@ const SEO_KEYWORDS =
 
 export const Route = createFileRoute("/services")({
   component: ServicesPage,
-  head: () => ({
-    meta: [
-      { title: "Services | Web, SEO, Ads, Social & Video" },
-      {
-        name: "description",
-        content:
-          "Explore Kural Innovations' services: web development, SEO, Google & Meta ads, social media, video editing, IoT systems, and AI/ML solutions across Tamil Nadu.",
-      },
-      { name: "keywords", content: SEO_KEYWORDS },
-      { name: "robots", content: "index, follow" },
-      { name: "author", content: "Kural Innovations" },
-      { property: "og:title", content: "Services - Kural Innovations" },
-      { property: "og:description", content: "Web development, SEO, Ads, Social Media, Video Editing, IoT, and AI/ML" },
-      { property: "og:url", content: "https://www.kural-innovations.in/services" },
-      { property: "og:type", content: "website" },
-      { property: "og:image", content: "https://www.kural-innovations.in/logo.png" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Our Services" },
-      { name: "twitter:description", content: "Web, SEO, Ads, Social, Video, IoT & AI/ML" },
-    ],
-    link: [
-      { rel: "canonical", href: "https://www.kural-innovations.in/services" },
-    ],
-  }),
 });
 
 function ServicesPage() {
   return (
     <PageTransition>
+      <Helmet>
+        <title>Services | Web Development, SEO, Ads, AI/ML & IoT in Tirunelveli</title>
+        <meta name="description" content="Kural Innovations provides web development, SEO, Google & Meta ads, social media management, video editing, IoT systems, and AI/ML solutions in Tirunelveli, Tamil Nadu." />
+        <meta name="keywords" content={SEO_KEYWORDS} />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Kural Innovations" />
+        <link rel="canonical" href="https://www.kural-innovations.in/services" />
+        <meta property="og:title" content="Services - Kural Innovations | Tirunelveli" />
+        <meta property="og:description" content="Web development, SEO, Ads, Social Media, Video Editing, IoT, and AI/ML solutions" />
+        <meta property="og:url" content="https://www.kural-innovations.in/services" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.kural-innovations.in/logo.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Our Services" />
+        <meta name="twitter:description" content="Web, SEO, Ads, Social, Video, IoT & AI/ML services in Tirunelveli" />
+      </Helmet>
       <div className="min-h-screen bg-background">
         <Navbar />
         <main className="pt-24">

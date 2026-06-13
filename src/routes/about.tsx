@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import CompanyStory from "@/components/CompanyStory";
 import Footer from "@/components/Footer";
@@ -9,35 +10,27 @@ const SEO_KEYWORDS =
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
-  head: () => ({
-    meta: [
-      { title: "About Kural Innovations | Tirunelveli Innovation Studio" },
-      {
-        name: "description",
-        content:
-          "Learn about Kural Innovations, a Tirunelveli-based studio delivering web, marketing, and technology solutions across Tamil Nadu.",
-      },
-      { name: "keywords", content: SEO_KEYWORDS },
-      { name: "robots", content: "index, follow" },
-      { name: "author", content: "Kural Innovations" },
-      { property: "og:title", content: "About Kural Innovations" },
-      { property: "og:description", content: "Learn about our team of ECE engineers building solutions in Tirunelveli" },
-      { property: "og:url", content: "https://www.kural-innovations.in/about" },
-      { property: "og:type", content: "website" },
-      { property: "og:image", content: "https://www.kural-innovations.in/logo.png" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "About Kural Innovations" },
-      { name: "twitter:description", content: "Learn about our team of ECE engineers" },
-    ],
-    link: [
-      { rel: "canonical", href: "https://www.kural-innovations.in/about" },
-    ],
-  }),
 });
 
 function AboutPage() {
   return (
     <PageTransition>
+      <Helmet>
+        <title>About Kural Innovations | Student Startup from Tirunelveli, Tamil Nadu</title>
+        <meta name="description" content="Learn about Kural Innovations, a student-founded tech studio in Tirunelveli delivering web development, IoT solutions, AI/ML projects, and student project guidance." />
+        <meta name="keywords" content={SEO_KEYWORDS} />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Kural Innovations" />
+        <link rel="canonical" href="https://www.kural-innovations.in/about" />
+        <meta property="og:title" content="About Kural Innovations | Student Startup" />
+        <meta property="og:description" content="Student-founded tech studio in Tirunelveli offering web development, IoT, AI/ML, and project guidance." />
+        <meta property="og:url" content="https://www.kural-innovations.in/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.kural-innovations.in/logo.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="About Kural Innovations" />
+        <meta name="twitter:description" content="Student startup building tech solutions in Tirunelveli" />
+      </Helmet>
       <div className="min-h-screen bg-background">
         <Navbar />
         <main className="pt-24">
