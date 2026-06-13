@@ -1,4 +1,3 @@
-import { ExternalLink } from "lucide-react";
 import SectionLabel from "./SectionLabel";
 
 interface Gig {
@@ -90,8 +89,7 @@ export default function GigShowcase() {
 
                 {/* CTA */}
                 <div className="flex items-center gap-2 text-primary font-medium text-sm group-hover:gap-3 transition-all">
-                  View on Fiverr
-                  <ExternalLink className="w-4 h-4" />
+                  View on Fiverr →
                 </div>
               </div>
             </a>
