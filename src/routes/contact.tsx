@@ -33,7 +33,7 @@ function ContactPage() {
       </Helmet>
       <div className="min-h-screen bg-background">
         <Navbar />
-        <main className="pt-24">
+        <main className="pt-6">
           <ContactDetails />
         </main>
         <Footer />

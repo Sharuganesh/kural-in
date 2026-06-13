@@ -33,7 +33,7 @@ function ProjectsPage() {
       </Helmet>
       <div className="min-h-screen bg-background">
         <Navbar />
-        <main className="pt-24">
+        <main className="pt-6">
           <ProjectsSection />
         </main>
         <Footer />

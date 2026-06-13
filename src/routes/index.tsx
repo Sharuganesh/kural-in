@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import HomeFeatures from "@/components/HomeFeatures";
+import GigShowcase from "@/components/GigShowcase";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 
@@ -37,6 +38,7 @@ function Index() {
         <Navbar />
         <HeroSection />
         <HomeFeatures />
+        <GigShowcase />
         <Footer />
       </div>
     </PageTransition>
