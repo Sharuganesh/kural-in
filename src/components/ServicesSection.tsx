@@ -118,58 +118,6 @@ export default function ServicesSection() {
         </div>
 
         <div className="mt-16 space-y-10">
-          <div
-            className="relative overflow-hidden rounded-3xl border border-border p-6 sm:p-8 card-elevated"
-            style={{ background: "var(--gradient-card)" }}
-          >
-            <div className="flex items-center justify-between gap-6 flex-wrap">
-              <div>
-                <p className="font-mono text-xs text-muted-foreground tracking-wider">VISUAL SHOWCASE</p>
-                <h3 className="font-heading text-2xl sm:text-3xl font-semibold text-foreground">
-                  Web launches with strong local presence
-                </h3>
-                <p className="text-sm text-muted-foreground mt-2 max-w-xl">
-                  Clean UI, fast load times, and SEO foundations that help businesses in Tirunelveli
-                  and across Tamil Nadu stand out.
-                </p>
-              </div>
-              <div className="flex items-center gap-3 text-xs font-mono text-muted-foreground">
-                <span className="px-3 py-1 rounded-full border border-border">SEO-Ready</span>
-                <span className="px-3 py-1 rounded-full border border-border">Ads-Ready</span>
-                <span className="px-3 py-1 rounded-full border border-border">Mobile-First</span>
-              </div>
-            </div>
-
-            <div className="mt-6 space-y-4">
-              <div
-                className="flex gap-4 showcase-rail"
-                style={{ transform: `translateX(${offset * -1}px)` }}
-              >
-                {[arokyaImg, yaazhImg, turfImg, fitnessImg].map((img, i) => (
-                  <div
-                    key={`showcase-a-${i}`}
-                    className="h-36 sm:h-44 w-64 sm:w-72 shrink-0 rounded-2xl overflow-hidden border border-border bg-muted"
-                  >
-                    <img src={img} alt="Project preview" className="h-full w-full object-cover" />
-                  </div>
-                ))}
-              </div>
-              <div
-                className="flex gap-4 showcase-rail"
-                style={{ transform: `translateX(${offset * 0.7}px)` }}
-              >
-                {[arokyaImg, yaazhImg, clinicImg, braidalecommerceImg, fitnessImg].map((img, i) => (
-                  <div
-                    key={`showcase-b-${i}`}
-                    className="h-32 sm:h-40 w-56 sm:w-64 shrink-0 rounded-2xl overflow-hidden border border-border bg-muted"
-                  >
-                    <img src={img} alt="Project preview" className="h-full w-full object-cover" />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <SectionLabel>Video Editing</SectionLabel>
