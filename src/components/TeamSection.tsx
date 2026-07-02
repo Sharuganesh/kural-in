@@ -26,7 +26,7 @@ function useIntersection(margin = "-100px") {
 const team = [
   {
     name: "Sharunandhaganesh S",
-    role: "Co-Founder & Lead Engineer",
+    role: "Founder & CEO",
     domain: "IoT · AI/ML · Full-Stack · Research",
     color: "#6366f1",
     highlights: [

@@ -14,6 +14,10 @@ import smartRestaurantImg from "@/assets/smart-restaurant.png";
 import predictiveMaintenanceImg from "@/assets/predictive-maintenance.jpeg";
 import esp32PcbImg from "@/assets/esp32-pcb.jpeg";
 import isTewsImg from "@/assets/is-tews.png";
+import cheranCoImg from "@/assets/cheran.png";
+import kannialazhannImg from "@/assets/kanni.png";
+import dhasanKitchenImg from "@/assets/dasan.png";
+import skyNestImg from "@/assets/skynest.png";
 
 const projects = [
   {
@@ -65,6 +69,46 @@ const projects = [
     status: "Live — Deployed",
     link: "https://vsiva763-git.github.io/cheery-alfajores-407f3e/",
     image: bridalEcommerceImg,
+  },
+  {
+    title: "Cheran & Co.",
+    subtitle: "Building Materials Supplier Website — Mettupalayam",
+    type: "Web · Business · Deployed",
+    desc: "Lead conversion website for a premium building materials supplier offering cement, steel, sand, blocks, and equipment rental. Features direct call-to-action buttons and 24/7 WhatsApp support for instant enquiries.",
+    tech: ["React", "Vite", "SEO", "Lead Generation"],
+    status: "Live — Deployed",
+    link: "https://www.cheranandco.in/",
+    image: cheranCoImg,
+  },
+  {
+    title: "KSK & Kannialazhann Farm",
+    subtitle: "Livestock & Native Breeds Farm Website — Tamil Nadu",
+    type: "Web · Agriculture · Deployed",
+    desc: "Direct-to-consumer farming website showcasing native dog breeds (Rajapalayam, Kanni), HF cows, Sembari goats, and country chicken. Features live inventory, WhatsApp ordering, and direct farmer contact for ethical animal sourcing.",
+    tech: ["React", "Vite", "E-Commerce", "WhatsApp Integration"],
+    status: "Live — Deployed",
+    link: "https://www.kannialazhannfarm.in/",
+    image: kannialazhannImg,
+  },
+  {
+    title: "Dhasan Kitchen & Interiors",
+    subtitle: "Kitchen & Interior Design Studio Website — Tamil Nadu",
+    type: "Web · Interiors · Deployed",
+    desc: "A polished brand website for a kitchen and interior design studio featuring project showcases, service highlights, and clear consultation contact paths for new clients.",
+    tech: ["React", "Vite", "SEO", "Lead Capture"],
+    status: "Live — Deployed",
+    link: "https://www.dhasankitchenandinteriors.in/",
+    image: dhasanKitchenImg,
+  },
+  {
+    title: "Sky Nest Constructions",
+    subtitle: "Construction Company Website — Tamil Nadu",
+    type: "Web · Construction · Deployed",
+    desc: "Professional construction website highlighting projects, services, and trust-building content for residential and commercial builds with strong call-to-action conversion paths.",
+    tech: ["React", "Vite", "SEO", "WhatsApp Integration"],
+    status: "Live — Deployed",
+    link: "https://www.skynestconstructions.in/",
+    image: skyNestImg,
   },
   {
     title: "Nature Monitor",
@@ -273,7 +317,7 @@ export default function ProjectsSection() {
             Featured <span className="text-gradient">Projects</span>
           </h2>
           <p className="font-heading text-sm sm:text-base text-muted-foreground mt-4 max-w-2xl mx-auto">
-            12 shipped builds spanning Web, IoT, Embedded, AI/ML, and Hardware.
+            14 shipped builds spanning Web, IoT, Embedded, AI/ML, and Hardware.
           </p>
         </div>
       </div>

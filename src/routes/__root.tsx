@@ -1,4 +1,5 @@
 import { Outlet, Link, createRootRoute, HeadContent, useLocation } from "@tanstack/react-router";
+import ContactFab from "@/components/ContactFab";
 
 function NotFoundComponent() {
   return (
@@ -36,6 +37,7 @@ function RootComponent() {
       <div key={location.pathname} className="page-enter">
         <Outlet />
       </div>
+      <ContactFab />
     </>
   );
 }
