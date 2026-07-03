@@ -19,13 +19,22 @@ function Index() {
     <PageTransition>
       <Helmet>
         <title>Kural Innovations | Web Development & Digital Solutions</title>
-        <meta name="description" content="Kural Innovations is a Tirunelveli-based web, SEO, ads, and digital growth studio delivering high-impact websites and marketing across Tamil Nadu." />
+        <meta
+          name="description"
+          content="Kural Innovations is a Tirunelveli-based web, SEO, ads, and digital growth studio delivering high-impact websites and marketing across Tamil Nadu."
+        />
         <meta name="keywords" content={SEO_KEYWORDS} />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Kural Innovations" />
         <link rel="canonical" href="https://www.kural-innovations.in/" />
-        <meta property="og:title" content="Kural Innovations | Web Development & Digital Solutions" />
-        <meta property="og:description" content="Small Ideas. Powerful Solutions. Web, SEO, Ads, Social & Video" />
+        <meta
+          property="og:title"
+          content="Kural Innovations | Web Development & Digital Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Small Ideas. Powerful Solutions. Web, SEO, Ads, Social & Video"
+        />
         <meta property="og:url" content="https://www.kural-innovations.in/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.kural-innovations.in/logo.png" />

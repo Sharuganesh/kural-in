@@ -40,7 +40,8 @@ export default function GigShowcase() {
             Services Available on <span className="text-gradient">Fiverr</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Book directly from our Fiverr profile for flexible engagement and milestone-based delivery
+            Book directly from our Fiverr profile for flexible engagement and milestone-based
+            delivery
           </p>
         </div>
 
@@ -67,7 +68,9 @@ export default function GigShowcase() {
                     <div className="absolute inset-0 bg-grid-small opacity-5" />
                     <div className="text-center z-10">
                       <div className="text-3xl mb-2">{idx === 0 ? "🌐" : "🎬"}</div>
-                      <span className="text-xs font-mono text-muted-foreground px-2">{gig.category}</span>
+                      <span className="text-xs font-mono text-muted-foreground px-2">
+                        {gig.category}
+                      </span>
                     </div>
                   </>
                 )}
@@ -85,9 +88,7 @@ export default function GigShowcase() {
                 <h3 className="font-heading font-semibold text-base mb-2 group-hover:text-primary transition-colors">
                   {gig.title}
                 </h3>
-                <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
-                  {gig.description}
-                </p>
+                <p className="text-sm text-muted-foreground mb-4 line-clamp-2">{gig.description}</p>
 
                 {/* CTA */}
                 <div className="flex items-center gap-2 text-primary font-medium text-sm group-hover:gap-3 transition-all">

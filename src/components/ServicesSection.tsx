@@ -107,7 +107,9 @@ export default function ServicesSection() {
             Everything Your Business Needs to <span className="text-gradient">Grow Online</span>
           </h2>
           <p className="font-heading text-muted-foreground mt-6 max-w-3xl mx-auto text-base sm:text-lg">
-            We work with clinics, contractors, gyms, restaurants, and local businesses across Tamil Nadu. Whether you're starting from nothing or trying to get more customers from an existing setup, we handle the full picture — website, ads, social, and SEO.
+            We work with clinics, contractors, gyms, restaurants, and local businesses across Tamil
+            Nadu. Whether you're starting from nothing or trying to get more customers from an
+            existing setup, we handle the full picture — website, ads, social, and SEO.
           </p>
         </div>
 
@@ -151,7 +153,9 @@ export default function ServicesSection() {
                 </div>
                 <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
                   <div className="text-center">
-                    <p className="text-white text-sm font-heading font-semibold mb-2">Video Editing Showreel</p>
+                    <p className="text-white text-sm font-heading font-semibold mb-2">
+                      Video Editing Showreel
+                    </p>
                     <p className="text-white/70 text-xs">Click to watch full video</p>
                   </div>
                 </div>

@@ -103,7 +103,8 @@ export default function ContactSection() {
             Let's Build <span className="text-gradient">Together</span>
           </h2>
           <p className="font-heading text-lg text-muted-foreground max-w-xl mx-auto">
-            Have an idea, a problem to solve, or a project in mind? Send a message and we'll get back to you within 24 hours.
+            Have an idea, a problem to solve, or a project in mind? Send a message and we'll get
+            back to you within 24 hours.
           </p>
         </div>
 

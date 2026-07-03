@@ -17,19 +17,28 @@ function AboutPage() {
     <PageTransition>
       <Helmet>
         <title>About Kural Innovations | Student Startup from Tirunelveli, Tamil Nadu</title>
-        <meta name="description" content="Learn about Kural Innovations, a student-founded tech studio in Tirunelveli delivering web development, IoT solutions, AI/ML projects, and student project guidance." />
+        <meta
+          name="description"
+          content="Learn about Kural Innovations, a student-founded tech studio in Tirunelveli delivering web development, IoT solutions, AI/ML projects, and student project guidance."
+        />
         <meta name="keywords" content={SEO_KEYWORDS} />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Kural Innovations" />
         <link rel="canonical" href="https://www.kural-innovations.in/about" />
         <meta property="og:title" content="About Kural Innovations | Student Startup" />
-        <meta property="og:description" content="Student-founded tech studio in Tirunelveli offering web development, IoT, AI/ML, and project guidance." />
+        <meta
+          property="og:description"
+          content="Student-founded tech studio in Tirunelveli offering web development, IoT, AI/ML, and project guidance."
+        />
         <meta property="og:url" content="https://www.kural-innovations.in/about" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.kural-innovations.in/logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="About Kural Innovations" />
-        <meta name="twitter:description" content="Student startup building tech solutions in Tirunelveli" />
+        <meta
+          name="twitter:description"
+          content="Student startup building tech solutions in Tirunelveli"
+        />
       </Helmet>
       <div className="min-h-screen bg-background">
         <Navbar />

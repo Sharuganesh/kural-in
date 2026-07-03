@@ -43,8 +43,8 @@ export default function AboutSection() {
             className={`space-y-6 transition-all duration-700 delay-200 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
           >
             <p className="text-muted-foreground leading-relaxed text-lg">
-              Kural Innovations is a technology-driven innovation studio based in Tirunelveli,
-              Tamil Nadu, focused on transforming simple ideas into powerful, real-world solutions.
+              Kural Innovations is a technology-driven innovation studio based in Tirunelveli, Tamil
+              Nadu, focused on transforming simple ideas into powerful, real-world solutions.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               We are not a typical service provider. We operate as a{" "}

@@ -17,13 +17,19 @@ function ProjectsPage() {
     <PageTransition>
       <Helmet>
         <title>Portfolio | Kural Innovations Projects & Case Studies</title>
-        <meta name="description" content="View Kural Innovations' portfolio of 14+ projects including websites, IoT systems, and AI solutions built for businesses across Tirunelveli and Tamil Nadu." />
+        <meta
+          name="description"
+          content="View Kural Innovations' portfolio of 14+ projects including websites, IoT systems, and AI solutions built for businesses across Tirunelveli and Tamil Nadu."
+        />
         <meta name="keywords" content={SEO_KEYWORDS} />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Kural Innovations" />
         <link rel="canonical" href="https://www.kural-innovations.in/projects" />
         <meta property="og:title" content="Portfolio - Kural Innovations" />
-        <meta property="og:description" content="14+ delivered projects in web development, IoT, and AI" />
+        <meta
+          property="og:description"
+          content="14+ delivered projects in web development, IoT, and AI"
+        />
         <meta property="og:url" content="https://www.kural-innovations.in/projects" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.kural-innovations.in/logo.png" />

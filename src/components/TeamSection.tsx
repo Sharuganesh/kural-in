@@ -81,7 +81,8 @@ export default function TeamSection() {
             The <span className="text-gradient">Founders</span>
           </h2>
           <p className="font-heading text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Four ECE engineers from Tirunelveli — two TCS NQT Digital cleared, three RHCSA-certified — who stopped building for others and started building for themselves.
+            Four ECE engineers from Tirunelveli — two TCS NQT Digital cleared, three RHCSA-certified
+            — who stopped building for others and started building for themselves.
           </p>
         </div>
 

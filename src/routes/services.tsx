@@ -17,19 +17,28 @@ function ServicesPage() {
     <PageTransition>
       <Helmet>
         <title>Services | Web Development, SEO, Ads, AI/ML & IoT in Tirunelveli</title>
-        <meta name="description" content="Kural Innovations provides web development, SEO, Google & Meta ads, social media management, video editing, IoT systems, and AI/ML solutions in Tirunelveli, Tamil Nadu." />
+        <meta
+          name="description"
+          content="Kural Innovations provides web development, SEO, Google & Meta ads, social media management, video editing, IoT systems, and AI/ML solutions in Tirunelveli, Tamil Nadu."
+        />
         <meta name="keywords" content={SEO_KEYWORDS} />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Kural Innovations" />
         <link rel="canonical" href="https://www.kural-innovations.in/services" />
         <meta property="og:title" content="Services - Kural Innovations | Tirunelveli" />
-        <meta property="og:description" content="Web development, SEO, Ads, Social Media, Video Editing, IoT, and AI/ML solutions" />
+        <meta
+          property="og:description"
+          content="Web development, SEO, Ads, Social Media, Video Editing, IoT, and AI/ML solutions"
+        />
         <meta property="og:url" content="https://www.kural-innovations.in/services" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.kural-innovations.in/logo.png" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Our Services" />
-        <meta name="twitter:description" content="Web, SEO, Ads, Social, Video, IoT & AI/ML services in Tirunelveli" />
+        <meta
+          name="twitter:description"
+          content="Web, SEO, Ads, Social, Video, IoT & AI/ML services in Tirunelveli"
+        />
       </Helmet>
       <div className="min-h-screen bg-background">
         <Navbar />

@@ -17,13 +17,19 @@ function ContactPage() {
     <PageTransition>
       <Helmet>
         <title>Contact Kural Innovations | Tirunelveli Tech Studio</title>
-        <meta name="description" content="Get in touch with Kural Innovations in Tirunelveli. Contact us for web development, SEO, digital marketing, IoT, and AI/ML projects." />
+        <meta
+          name="description"
+          content="Get in touch with Kural Innovations in Tirunelveli. Contact us for web development, SEO, digital marketing, IoT, and AI/ML projects."
+        />
         <meta name="keywords" content={SEO_KEYWORDS} />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Kural Innovations" />
         <link rel="canonical" href="https://www.kural-innovations.in/contact" />
         <meta property="og:title" content="Contact - Kural Innovations" />
-        <meta property="og:description" content="Contact us for web development, SEO, ads, and IoT projects in Tirunelveli" />
+        <meta
+          property="og:description"
+          content="Contact us for web development, SEO, ads, and IoT projects in Tirunelveli"
+        />
         <meta property="og:url" content="https://www.kural-innovations.in/contact" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.kural-innovations.in/logo.png" />

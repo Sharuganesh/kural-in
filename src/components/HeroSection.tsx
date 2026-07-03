@@ -9,7 +9,7 @@ export default function HeroSection() {
     >
       {/* Subtle background */}
       <div className="absolute inset-0 circuit-grid opacity-5" />
-      
+
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto w-full py-20">
         {/* Logo */}
         <div className="mx-auto mb-8 sm:mb-10">
@@ -25,22 +25,31 @@ export default function HeroSection() {
         </div>
 
         {/* Main Heading */}
-        <h1 className="font-display font-bold tracking-wider mb-4 leading-tight" style={{ fontSize: "clamp(2rem, 7vw, 3.5rem)" }}>
+        <h1
+          className="font-display font-bold tracking-wider mb-4 leading-tight"
+          style={{ fontSize: "clamp(2rem, 7vw, 3.5rem)" }}
+        >
           <span className="text-gradient">Web Development & Digital Growth</span>
         </h1>
 
         {/* Subheading */}
         <p className="text-lg sm:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-          Get a high-converting website, SEO ranking, and lead-generation system that turns visitors into customers.
+          Get a high-converting website, SEO ranking, and lead-generation system that turns visitors
+          into customers.
         </p>
 
         {/* Services Quick List */}
         <div className="flex flex-wrap justify-center gap-3 mb-10">
-          {["Web Development", "SEO & Rankings", "Lead Generation", "Digital Ads"].map((service) => (
-            <span key={service} className="px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-sm font-medium text-primary">
-              {service}
-            </span>
-          ))}
+          {["Web Development", "SEO & Rankings", "Lead Generation", "Digital Ads"].map(
+            (service) => (
+              <span
+                key={service}
+                className="px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-sm font-medium text-primary"
+              >
+                {service}
+              </span>
+            ),
+          )}
         </div>
 
         {/* CTAs */}
@@ -62,7 +71,7 @@ export default function HeroSection() {
         {/* Trust Indicators */}
         <div className="grid grid-cols-3 sm:grid-cols-4 gap-6 pt-8 border-t border-border/50">
           <div className="text-center">
-            <div className="text-2xl sm:text-3xl font-bold text-primary">15+</div>
+            <div className="text-2xl sm:text-3xl font-bold text-primary">17+</div>
             <div className="text-xs sm:text-sm text-muted-foreground mt-1">Projects Done</div>
           </div>
           <div className="text-center">

@@ -52,7 +52,9 @@ export default function ContactDetails() {
     "Other",
   ];
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -68,13 +70,17 @@ export default function ContactDetails() {
     <>
       {/* Header */}
       <section className="py-12 sm:py-16 md:py-20 px-4 md:px-8">
-        <div className="max-w-4xl mx-auto text-center" style={{ animation: "slideInUp 0.6s ease-out" }}>
+        <div
+          className="max-w-4xl mx-auto text-center"
+          style={{ animation: "slideInUp 0.6s ease-out" }}
+        >
           <SectionLabel align="center">Contact</SectionLabel>
           <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Let's Build <span className="text-gradient">Together</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have a project idea? A business problem to solve? Send us the details and we'll get back to you within 24 hours. No lengthy discovery calls — we're direct.
+            Have a project idea? A business problem to solve? Send us the details and we'll get back
+            to you within 24 hours. No lengthy discovery calls — we're direct.
           </p>
         </div>
       </section>
@@ -92,8 +98,12 @@ export default function ContactDetails() {
                 className="p-4 md:p-6 rounded-xl border border-border bg-background hover:border-primary/50 transition-all group"
                 style={{ animation: `slideInUp 0.6s ease-out ${150 * idx + 200}ms both` }}
               >
-                <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">{method.icon}</div>
-                <h3 className="font-heading font-semibold text-sm md:text-base mb-1">{method.title}</h3>
+                <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">
+                  {method.icon}
+                </div>
+                <h3 className="font-heading font-semibold text-sm md:text-base mb-1">
+                  {method.title}
+                </h3>
                 <p className="text-xs text-muted-foreground">{method.description}</p>
               </a>
             ))}
@@ -104,12 +114,23 @@ export default function ContactDetails() {
       {/* Contact Form */}
       <section className="py-16 sm:py-20 md:py-24 px-4 md:px-8">
         <div className="max-w-3xl mx-auto">
-          <div className="mb-12 text-center" style={{ animation: "slideInUp 0.6s ease-out 0.1s both" }}>
-            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold">Send us your details</h2>
-            <p className="text-muted-foreground mt-2">Fill this out and we'll reach out with a timeline and approach</p>
+          <div
+            className="mb-12 text-center"
+            style={{ animation: "slideInUp 0.6s ease-out 0.1s both" }}
+          >
+            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold">
+              Send us your details
+            </h2>
+            <p className="text-muted-foreground mt-2">
+              Fill this out and we'll reach out with a timeline and approach
+            </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6 bg-secondary/20 p-8 rounded-2xl border border-border" style={{ animation: "slideInUp 0.6s ease-out 0.2s both" }}>
+          <form
+            onSubmit={handleSubmit}
+            className="space-y-6 bg-secondary/20 p-8 rounded-2xl border border-border"
+            style={{ animation: "slideInUp 0.6s ease-out 0.2s both" }}
+          >
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-heading font-semibold mb-2">Your Name *</label>
@@ -139,7 +160,9 @@ export default function ContactDetails() {
 
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-heading font-semibold mb-2">Phone / WhatsApp</label>
+                <label className="block text-sm font-heading font-semibold mb-2">
+                  Phone / WhatsApp
+                </label>
                 <input
                   type="tel"
                   name="phone"
@@ -150,7 +173,9 @@ export default function ContactDetails() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-heading font-semibold mb-2">Project Type</label>
+                <label className="block text-sm font-heading font-semibold mb-2">
+                  Project Type
+                </label>
                 <select
                   name="projectType"
                   value={formData.projectType}
@@ -168,7 +193,9 @@ export default function ContactDetails() {
             </div>
 
             <div>
-              <label className="block text-sm font-heading font-semibold mb-2">Tell us about your project or idea *</label>
+              <label className="block text-sm font-heading font-semibold mb-2">
+                Tell us about your project or idea *
+              </label>
               <textarea
                 name="message"
                 value={formData.message}
@@ -209,22 +236,26 @@ export default function ContactDetails() {
               {
                 step: "1",
                 title: "Discovery Call",
-                description: "30-min chat about your problem, target audience, and goals. No sales pitch.",
+                description:
+                  "30-min chat about your problem, target audience, and goals. No sales pitch.",
               },
               {
                 step: "2",
                 title: "Proposal",
-                description: "We outline approach, timeline, deliverables, and cost. You review and decide.",
+                description:
+                  "We outline approach, timeline, deliverables, and cost. You review and decide.",
               },
               {
                 step: "3",
                 title: "Development",
-                description: "We build in sprints with weekly updates. You stay informed every step.",
+                description:
+                  "We build in sprints with weekly updates. You stay informed every step.",
               },
               {
                 step: "4",
                 title: "Launch & Support",
-                description: "Deploy live, handle post-launch issues, and provide 30 days of support.",
+                description:
+                  "Deploy live, handle post-launch issues, and provide 30 days of support.",
               },
             ].map((item, idx) => (
               <div key={idx} className="relative">

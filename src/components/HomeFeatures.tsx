@@ -21,7 +21,8 @@ export default function HomeFeatures() {
     },
     {
       title: "Yaazh Speciality Clinic",
-      description: "Patient-first clinic website with doctor profiles, booking system, and accessibility",
+      description:
+        "Patient-first clinic website with doctor profiles, booking system, and accessibility",
       type: "Website",
       location: "Coimbatore",
       highlight: "WhatsApp Booking",
@@ -73,13 +74,18 @@ export default function HomeFeatures() {
       {/* Recent Work Section */}
       <section className="py-16 sm:py-20 md:py-24 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-12 md:mb-16 text-center" ref={ref} style={{ animation: "slideInUp 0.6s ease-out" }}>
+          <div
+            className="mb-12 md:mb-16 text-center"
+            ref={ref}
+            style={{ animation: "slideInUp 0.6s ease-out" }}
+          >
             <SectionLabel align="center">Featured Work</SectionLabel>
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold">
               Recent <span className="text-gradient">Projects</span>
             </h2>
             <p className="text-muted-foreground text-lg mt-3 max-w-2xl mx-auto">
-              From lead-generation websites to booking systems, we build solutions that drive real business results
+              From lead-generation websites to booking systems, we build solutions that drive real
+              business results
             </p>
           </div>
 
@@ -91,7 +97,9 @@ export default function HomeFeatures() {
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
                 style={{
-                  animation: isVisible ? `slideInUp 0.6s ease-out ${150 * idx + 100}ms forwards` : "none",
+                  animation: isVisible
+                    ? `slideInUp 0.6s ease-out ${150 * idx + 100}ms forwards`
+                    : "none",
                   opacity: isVisible ? 1 : 0,
                 }}
               >
@@ -105,7 +113,9 @@ export default function HomeFeatures() {
                 <p className="text-sm text-muted-foreground mb-3">{project.description}</p>
                 <div className="flex items-center justify-between pt-3 border-t border-border">
                   <span className="text-xs text-muted-foreground">{project.location}</span>
-                  <span className="text-xs font-mono font-semibold text-primary">{project.highlight}</span>
+                  <span className="text-xs font-mono font-semibold text-primary">
+                    {project.highlight}
+                  </span>
                 </div>
               </div>
             ))}
@@ -127,8 +137,13 @@ export default function HomeFeatures() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {stats.map((stat, idx) => (
-              <div key={idx} className="text-center p-6 rounded-xl border border-border/50 bg-background/50 backdrop-blur-sm">
-                <div className="font-display text-3xl sm:text-4xl font-bold text-gradient mb-2">{stat.value}</div>
+              <div
+                key={idx}
+                className="text-center p-6 rounded-xl border border-border/50 bg-background/50 backdrop-blur-sm"
+              >
+                <div className="font-display text-3xl sm:text-4xl font-bold text-gradient mb-2">
+                  {stat.value}
+                </div>
                 <div className="text-sm text-muted-foreground font-heading">{stat.label}</div>
               </div>
             ))}

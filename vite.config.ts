@@ -16,5 +16,24 @@ export default defineConfig({
   ],
   build: {
     outDir: "dist",
+    minify: "terser",
+    terserOptions: {
+      compress: {
+        drop_console: true,
+      },
+    },
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom", "@tanstack/react-router"],
+          animations: ["framer-motion"],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
+    reportCompressedSize: false,
+  },
+  ssr: {
+    noExternal: ["framer-motion"],
   },
 });
