@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
 
-Disallow: /api/
-
 Sitemap: https://www.kural-innovations.in/sitemap.xml
